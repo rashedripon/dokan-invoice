@@ -34,6 +34,10 @@ msgstr ""
 msgid "store_info"
 msgstr ""
 
+#: dokan-invoice.php:223 dokan-invoice.php:231
+msgid "Vendor: "
+msgstr ""
+
 #: dokan-invoice.php:320
 msgid "From vendors:"
 msgstr ""
