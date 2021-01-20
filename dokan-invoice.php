@@ -233,7 +233,7 @@ class Dokan_Invoice {
                 $store_name = $vendor->get_shop_name();
                 $store_name = ! empty( $store_name ) ? $store_name : __( 'store_info', 'dokan-invoice' );
 
-                return $shop_name . '<br /><br />Vendor: ' . $store_name;
+                return $shop_name . __('<br/>') . __('Vendor: ', 'dokan-invoice') . $store_name;
             }
         } else {
             $vendor_id  = dokan_get_seller_id_by_order( $order_id );
@@ -241,7 +241,7 @@ class Dokan_Invoice {
             $store_name = $vendor->get_shop_name();
             $store_name = ! empty( $store_name ) ? $store_name : __( 'store_info', 'dokan-invoice' );
 
-            return $shop_name . '<br /><br />Vendor: ' . $store_name;
+            return $shop_name . __('<br/>') . __('Vendor: ', 'dokan-invoice') . $store_name;
         }
     }
 
